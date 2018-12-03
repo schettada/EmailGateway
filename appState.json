@@ -16,12 +16,12 @@
       "3f82e741-3188-4027-95eb-112cff92a3ed": {
         "id": "3f82e741-3188-4027-95eb-112cff92a3ed",
         "parent": "42e67bfd-49eb-4f0d-80a9-d5b1a2adbdd6",
-        "name": "lambda.js",
+        "name": "EmailGateway.js",
         "type": "LAMBDA_FILE",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "EmailGateway/lambda.js",
+        "filePath": "EmailGateway/EmailGateway.js",
         "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
         "triggers": [
           {
@@ -36,7 +36,9 @@
         }
       }
     },
-    "deletedFiles": [],
+    "deletedFiles": [
+      "EmailGateway/lambda.js"
+    ],
     "rootNode": "42e67bfd-49eb-4f0d-80a9-d5b1a2adbdd6",
     "openFiles": [
       "3f82e741-3188-4027-95eb-112cff92a3ed"
@@ -84,7 +86,7 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1543816135894
+    "lastSave": 1543816188097
   },
   "VCS_STATE": {
     "provider": "GitHub",
