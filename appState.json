@@ -1,0 +1,96 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "42e67bfd-49eb-4f0d-80a9-d5b1a2adbdd6": {
+        "id": "42e67bfd-49eb-4f0d-80a9-d5b1a2adbdd6",
+        "parent": null,
+        "name": "EmailGateway",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "3f82e741-3188-4027-95eb-112cff92a3ed"
+        ],
+        "isRemovable": false,
+        "filePath": "EmailGateway"
+      },
+      "3f82e741-3188-4027-95eb-112cff92a3ed": {
+        "id": "3f82e741-3188-4027-95eb-112cff92a3ed",
+        "parent": "42e67bfd-49eb-4f0d-80a9-d5b1a2adbdd6",
+        "name": "lambda.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "EmailGateway/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [
+          {
+            "resourceName": "apigusEast1EmailGatewaysendEmailpost",
+            "config": {}
+          }
+        ],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128
+        }
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "42e67bfd-49eb-4f0d-80a9-d5b1a2adbdd6",
+    "openFiles": [
+      "3f82e741-3188-4027-95eb-112cff92a3ed"
+    ],
+    "currentFileId": "3f82e741-3188-4027-95eb-112cff92a3ed",
+    "resources": {
+      "apigusEast1EmailGatewaysendEmailpost": {
+        "name": "apigusEast1EmailGatewaysendEmailpost",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 0,
+          "apiName": "EmailGateway",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "sendEmail",
+          "resourcePath": "/sendEmail",
+          "restMethod": "POST",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "prod"
+        },
+        "globallyEditable": false
+      }
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    },
+    "lambdaId": "3f82e741-3188-4027-95eb-112cff92a3ed"
+  },
+  "PROJECT_META": {
+    "projectName": "EmailGateway",
+    "projectDescription": "AWS Email Gateway",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "lastSave": 1543815424951
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "EmailGateway",
+      "url": "https://github.com/schettada/EmailGateway"
+    }
+  }
+}
